@@ -14,6 +14,7 @@ namespace KentBeckTDDSampleCode
 
         public void times(int i)
         {
+            Amount = 5 * 2;
         }
     }
 }

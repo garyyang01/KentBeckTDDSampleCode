@@ -11,7 +11,7 @@ namespace KentBeckTDDSampleCodeTest
         {
             Dollar five = new Dollar(5);
             five.times(2);
-            Assert.Equals(10, five.Amount);
+            Assert.AreEqual(10, five.Amount);
         }
     }
 }

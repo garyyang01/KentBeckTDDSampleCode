@@ -9,9 +9,10 @@
             Amount = i;
         }
 
-        public void Times(int i)
+        public Dollar Times(int i)
         {
             Amount *= i;
+            return null;
         }
     }
 }

@@ -4,15 +4,14 @@
     {
         public decimal Amount;
 
-        public Dollar(int i)
+        public Dollar(decimal i)
         {
             Amount = i;
         }
 
         public Dollar Times(int i)
         {
-            Amount *= i;
-            return null;
+            return new Dollar(Amount * i);
         }
     }
 }

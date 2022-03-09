@@ -16,4 +16,11 @@ namespace KentBeckTDDSampleCode
             Assert.Equals(10, five.amount);
         }
     }
+
+    public class Dollar
+    {
+        public Dollar(int i)
+        {
+        }
+    }
 }

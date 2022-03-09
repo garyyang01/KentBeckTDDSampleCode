@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace KentBeckTDDSampleCode
+﻿namespace KentBeckTDDSampleCode
 {
     public class Dollar
     {

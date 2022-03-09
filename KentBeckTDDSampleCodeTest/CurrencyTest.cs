@@ -19,6 +19,7 @@ namespace KentBeckTDDSampleCodeTest
         public void Test_Equality()
         {
             Assert.True(new Dollar(5).Equals(new Dollar(5)));
+            Assert.False(new Dollar(5).Equals(new Dollar(6)));
         }
     }
 }

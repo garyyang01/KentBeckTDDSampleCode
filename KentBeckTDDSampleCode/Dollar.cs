@@ -1,23 +1,26 @@
 ﻿namespace KentBeckTDDSampleCode
 {
-    public class Dollar
+    public class Dollar : Money
     {
-        private readonly decimal _amount;
-
         public Dollar(decimal amount)
         {
-            _amount = amount;
+            Amount = amount;
         }
 
         public Dollar Times(int multiplier)
         {
-            return new Dollar(_amount * multiplier);
+            return new Dollar(Amount * multiplier);
         }
 
         public override bool Equals(object? obj)
         {
             var dollar = (Dollar) obj;
-            return dollar._amount == _amount;
+            return dollar.Amount == Amount;
         }
+    }
+
+    public class Money
+    {
+        protected decimal Amount;
     }
 }

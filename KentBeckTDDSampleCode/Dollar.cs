@@ -12,20 +12,4 @@
             return new Dollar(Amount * multiplier);
         }
     }
-
-    public class Money
-    {
-        protected decimal Amount;
-
-        public decimal GetAmount()
-        {
-            return Amount;
-        }
-
-        public override bool Equals(object? obj)
-        {
-            var money = (Money) obj;
-            return Amount == money.GetAmount();
-        }
-    }
 }

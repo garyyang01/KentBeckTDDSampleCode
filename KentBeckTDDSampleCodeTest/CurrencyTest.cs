@@ -18,7 +18,7 @@ namespace KentBeckTDDSampleCodeTest
         public void Test_Franc_Multiplication()
         {
             Franc five = new Franc(5);
-            Dollar product = five.Times(2);
+            Franc product = five.Times(2);
             Assert.AreEqual(new Franc(10), five.Times(2));
             Assert.AreEqual(new Franc(15), five.Times(3));
         }

@@ -11,12 +11,6 @@
         {
             return new Dollar(Amount * multiplier);
         }
-
-        public override bool Equals(object? obj)
-        {
-            var money = (Money) obj;
-            return Amount == money.GetAmount();
-        }
     }
 
     public class Money
@@ -26,6 +20,12 @@
         public decimal GetAmount()
         {
             return Amount;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            var money = (Money) obj;
+            return Amount == money.GetAmount();
         }
     }
 }

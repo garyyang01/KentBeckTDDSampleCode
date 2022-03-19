@@ -9,16 +9,14 @@ namespace KentBeckTDDSampleCodeTest
         [Test]
         public void Test_Multiplication()
         {
-            Dollar five = new Dollar(5);
-            Dollar product = five.Times(2);
+            var five = new Dollar(5);
             Assert.AreEqual(new Dollar(10), five.Times(2));
             Assert.AreEqual(new Dollar(15), five.Times(3));
         }
         [Test]
         public void Test_Franc_Multiplication()
         {
-            Franc five = new Franc(5);
-            Franc product = five.Times(2);
+            var five = new Franc(5);
             Assert.AreEqual(new Franc(10), five.Times(2));
             Assert.AreEqual(new Franc(15), five.Times(3));
         }

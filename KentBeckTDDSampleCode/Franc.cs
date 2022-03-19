@@ -2,7 +2,7 @@
 {
     public class Franc
     {
-        private decimal _amount;
+        private readonly decimal _amount;
 
         public Franc(decimal amount)
         {
@@ -16,7 +16,7 @@
 
         public override bool Equals(object? obj)
         {
-            Franc franc = (Franc)obj;
+            var franc = (Franc)obj;
             return franc._amount == _amount;
         }
     }

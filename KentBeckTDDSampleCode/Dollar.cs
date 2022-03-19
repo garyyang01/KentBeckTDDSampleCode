@@ -16,7 +16,7 @@
 
         public override bool Equals(object? obj)
         {
-            Dollar dollar = (Dollar) obj;
+            var dollar = (Dollar) obj;
             return dollar._amount == _amount;
         }
     }

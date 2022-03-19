@@ -14,13 +14,18 @@
 
         public override bool Equals(object? obj)
         {
-            var dollar = (Dollar) obj;
-            return dollar.Amount == Amount;
+            var money = (Money) obj;
+            return Amount == money.GetAmount();
         }
     }
 
     public class Money
     {
         protected decimal Amount;
+
+        public decimal GetAmount()
+        {
+            return Amount;
+        }
     }
 }

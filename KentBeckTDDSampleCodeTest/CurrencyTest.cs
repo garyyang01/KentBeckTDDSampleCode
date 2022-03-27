@@ -10,8 +10,8 @@ namespace KentBeckTDDSampleCodeTest
         public void Test_Multiplication()
         {
             Money five = Money.Dollar(5);
-            Assert.AreEqual(new Dollar(10), five.Times(2));
-            Assert.AreEqual(new Dollar(15), five.Times(3));
+            Assert.AreEqual(Money.Dollar(10), five.Times(2));
+            Assert.AreEqual(Money.Dollar(15), five.Times(3));
         }
         [Test]
         public void Test_Franc_Multiplication()

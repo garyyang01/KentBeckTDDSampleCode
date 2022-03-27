@@ -1,6 +1,6 @@
 ﻿namespace KentBeckTDDSampleCode
 {
-    public class Money
+    public abstract class Money
     {
         protected decimal Amount;
 
@@ -11,5 +11,12 @@
             var money = (Money) obj;
             return money != null && Amount == money.GetAmount() && GetType() == money.GetType();
         }
+
+        public static Dollar Dollar(int amount)
+        {
+            return new Dollar(amount);
+        }
+
+        public abstract Money Times(int multiplier);
     }
 }

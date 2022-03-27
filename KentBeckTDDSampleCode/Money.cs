@@ -9,7 +9,7 @@
         public override bool Equals(object? obj)
         {
             var money = (Money) obj;
-            return money != null && Amount == money.GetAmount();
+            return money != null && Amount == money.GetAmount() && GetType() == money.GetType();
         }
     }
 }

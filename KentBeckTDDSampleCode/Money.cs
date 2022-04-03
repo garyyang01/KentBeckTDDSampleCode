@@ -42,5 +42,10 @@
         {
             return _currency;
         }
+
+        public override string ToString()
+        {
+            return $"{Amount} {_currency}";
+        }
     }
 }

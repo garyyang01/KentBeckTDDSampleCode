@@ -8,7 +8,7 @@
 
         public override Money Times(int multiplier)
         {
-            return Dollar(Amount * multiplier);
+            return new Dollar(Amount * multiplier, "USD");
         }
     }
 }

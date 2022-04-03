@@ -11,5 +11,10 @@
         {
             return new Dollar(Amount * multiplier);
         }
+
+        public string Currency()
+        {
+            return "USD";
+        }
     }
 }

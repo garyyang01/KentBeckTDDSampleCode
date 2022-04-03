@@ -12,5 +12,9 @@
             return new Franc(Amount * multiplier);
         }
 
+        public string Currency()
+        {
+            return "CHF";
+        }
     }
 }

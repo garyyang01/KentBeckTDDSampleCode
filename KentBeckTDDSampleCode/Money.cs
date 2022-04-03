@@ -5,6 +5,12 @@
         protected decimal Amount;
         protected string _currency;
 
+
+        protected Money(decimal amount, string currency)
+        {
+            Amount = amount;
+            _currency = currency;
+        }
         public decimal GetAmount() => Amount;
 
         public override bool Equals(object? obj)

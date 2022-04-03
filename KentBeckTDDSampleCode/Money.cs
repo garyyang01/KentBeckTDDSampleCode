@@ -33,10 +33,6 @@
             return new Franc(amount, "CHF");
         }
 
-        public virtual Money Times(int multiplier)
-        {
-            return null;
-        }
 
         public string Currency()
         {
@@ -46,6 +42,11 @@
         public override string ToString()
         {
             return $"{Amount} {_currency}";
+        }
+
+        public Money Times(int multiplier)
+        {
+            return new Money(Amount * multiplier, _currency);
         }
     }
 }

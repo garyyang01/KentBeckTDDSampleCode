@@ -20,7 +20,7 @@
         public override bool Equals(object? obj)
         {
             var money = (Money) obj;
-            return money != null && Amount == money.GetAmount() && GetType() == money.GetType();
+            return money != null && Amount == money.GetAmount() && Currency().Equals(money.Currency());
         }
 
         public static Dollar Dollar(decimal amount)

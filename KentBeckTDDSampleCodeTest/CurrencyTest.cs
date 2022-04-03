@@ -26,7 +26,7 @@ namespace KentBeckTDDSampleCodeTest
         public void Test_Equality()
         {
             Assert.True(Money.Dollar(5).Equals(Money.Dollar(5)));
-            Assert.False(Money.Franc(5).Equals(Money.Franc(6)));
+            Assert.False(Money.Dollar(5).Equals(Money.Dollar(6)));
             Assert.False(Money.Franc(5).Equals(Money.Dollar(5)));
         }
 

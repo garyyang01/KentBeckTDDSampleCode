@@ -38,5 +38,11 @@ namespace KentBeckTDDSampleCodeTest
             Assert.AreEqual("USD", Money.Dollar(1).Currency());
             Assert.AreEqual("CHF", Money.Franc(1).Currency());
         }
+
+        [Test]
+        public void Test_Different_Class_Equality()
+        {
+            Assert.True(new Money(10, "CHF").Equals(new Franc(10, "CHF")));
+        }
     }
 }

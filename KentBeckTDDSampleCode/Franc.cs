@@ -10,7 +10,7 @@
 
         public override Money Times(int multiplier)
         {
-            return new Franc(Amount * multiplier, "CHF");
+            return Franc(Amount * multiplier);
         }
     }
 }

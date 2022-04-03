@@ -13,12 +13,12 @@
             return money != null && Amount == money.GetAmount() && GetType() == money.GetType();
         }
 
-        public static Dollar Dollar(int amount)
+        public static Dollar Dollar(decimal amount)
         {
             return new Dollar(amount, "USD");
         }
 
-        public static Franc Franc(int amount)
+        public static Franc Franc(decimal amount)
         {
             return new Franc(amount, "CHF");
         }

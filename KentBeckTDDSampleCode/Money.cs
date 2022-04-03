@@ -1,17 +1,21 @@
 ﻿namespace KentBeckTDDSampleCode
 {
-    public abstract class Money
+    public class Money
     {
-        protected decimal Amount;
         protected string _currency;
+        protected decimal Amount;
 
 
-        protected Money(decimal amount, string currency)
+        public Money(decimal amount, string currency)
         {
             Amount = amount;
             _currency = currency;
         }
-        public decimal GetAmount() => Amount;
+
+        public decimal GetAmount()
+        {
+            return Amount;
+        }
 
         public override bool Equals(object? obj)
         {
@@ -29,7 +33,10 @@
             return new Franc(amount, "CHF");
         }
 
-        public abstract Money Times(int multiplier);
+        public virtual Money Times(int multiplier)
+        {
+            return null;
+        }
 
         public string Currency()
         {

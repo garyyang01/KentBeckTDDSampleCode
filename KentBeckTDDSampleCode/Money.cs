@@ -23,14 +23,14 @@
             return money != null && Amount == money.GetAmount() && Currency().Equals(money.Currency());
         }
 
-        public static Dollar Dollar(decimal amount)
+        public static Money Dollar(decimal amount)
         {
-            return new Dollar(amount, "USD");
+            return new Money(amount, "USD");
         }
 
-        public static Franc Franc(decimal amount)
+        public static Money Franc(decimal amount)
         {
-            return new Franc(amount, "CHF");
+            return new Money(amount, "CHF");
         }
 
 

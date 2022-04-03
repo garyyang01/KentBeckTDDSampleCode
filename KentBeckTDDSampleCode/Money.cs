@@ -3,6 +3,7 @@
     public abstract class Money
     {
         protected decimal Amount;
+        protected string _currency;
 
         public decimal GetAmount() => Amount;
 
@@ -23,5 +24,10 @@
         }
 
         public abstract Money Times(int multiplier);
+
+        public string Currency()
+        {
+            return _currency;
+        }
     }
 }

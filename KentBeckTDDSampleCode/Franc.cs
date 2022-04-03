@@ -2,15 +2,15 @@
 {
     public class Franc : Money
     {
-        public Franc(decimal amount)
+        public Franc(decimal amount, string currency)
         {
             Amount = amount;
-            _currency = "CHF";
+            _currency = currency;
         }
 
         public override Money Times(int multiplier)
         {
-            return new Franc(Amount * multiplier);
+            return new Franc(Amount * multiplier, "CHF");
         }
     }
 }

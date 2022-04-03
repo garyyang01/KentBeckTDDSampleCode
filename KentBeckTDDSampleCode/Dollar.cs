@@ -2,15 +2,15 @@
 {
     public class Dollar : Money
     {
-        public Dollar(decimal amount)
+        public Dollar(decimal amount, string currency)
         {
             Amount = amount;
-            _currency = "USD";
+            _currency = currency;
         }
 
         public override Money Times(int multiplier)
         {
-           return new Dollar(Amount * multiplier);
+            return new Dollar(Amount * multiplier, "USD");
         }
     }
 }
